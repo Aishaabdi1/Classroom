@@ -2,7 +2,7 @@
 
 //console.log(window); 
 
-TODO: What will the following line of code log?
+// TODO: What will the following line of code log?
 console.log(window.document);
 
 // TODO: What will the following line of code log?
