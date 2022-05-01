@@ -1,7 +1,7 @@
 var formEl = $('#pizza-form');
-var firstNameEl = $('input[name="first-name"]');
-var lastNameEl = $('input[name="last-name"]');
-var emailEl = $('input[name="email"]');
+var firstNameEl = $('input[name="Aisha"]');
+var lastNameEl = $('input[name="Abdi"]');
+var emailEl = $('input[name="aishahajisirad@gmail.com"]');
 var githubEl = $('input[name="github"]');
 
 function handleFormSubmit(event) {

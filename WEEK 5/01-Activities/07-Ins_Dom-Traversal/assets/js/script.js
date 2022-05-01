@@ -2,9 +2,10 @@
 // Uncomment the following two lines to see the which elements are the children to the #top
 // $('#top').children().css('color', 'yellow');
 // console.log($('#top').children());
-
+$ ('#top').children().css('color', 'yellow');
 // Uncomment the following line to see the which element is the first direct child of the <main>
-// $('#top').children().eq(0).addClass('boxy');
+'#top'.children().eq(0).addClass('boxy');
+//document.body.children [0]
 
 // Uncomment the following line to add a list item to the list
 // $('#top').children().eq(4).append($('<li>Classmates</li>'));
