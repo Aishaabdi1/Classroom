@@ -11,7 +11,15 @@ const moviePatrons = [
 
 // forEach is a functional way of iterating through an array without a for-loop
 
+// modern way of writing code //
 moviePatrons.forEach(patron => console.log(patron.age));
+
+// for loop that is equivalent to that //
+
+for (let i = 0; i < moviePatrons.length; i++){
+  const patron = moviePatrons[i]
+  console.log(patron.age)
+}
 
 // 2.
 
@@ -32,13 +40,13 @@ const cardedMoviePatrons = moviePatrons.map(patron => {
   // Copy the object being iterated over
   const pObj = { ...patron };
   // Do everything else the same
-  if (pObj.age >= 17) {
-    pObj.canWatchRatedR = true;
+  if (patron.age >= 17) {
+    patron.canWatchRatedR = true;
   } else {
-    pObj.canWatchRatedR = false;
+    patron.canWatchRatedR = false;
   }
   // Be sure to return the new obj, not the parameter
-  return pObj;
+  return patron;
 });
 
 console.log("Movie Patrons: ")

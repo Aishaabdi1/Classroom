@@ -1,3 +1,4 @@
+
 // declare the students array
 var students = ['Alice', 'Bob', 'Carol', 'Dave'];
 

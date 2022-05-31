@@ -3,6 +3,7 @@
 for (var i = 0; i < 5; i++) {
   console.log(i);
 }
+// i exists outside the for loop //
 
 console.log(i); // Prints 5
 
@@ -14,6 +15,8 @@ for (let j = 0; j < 5; j++) {
   console.log(j);
   console.log(x);
 }
+
+// j does not exist outside the for loop because of the let variable //
 
 console.log(j); // ReferenceError: j is not defined
 
