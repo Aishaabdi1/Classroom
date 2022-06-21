@@ -80,6 +80,7 @@ app.post('/api/feedback', (req, res) => {
       feedback_id: uuid(),
     };
 
+
     readAndAppend(newFeedback, './db/feedback.json');
 
     const response = {
@@ -92,6 +93,10 @@ app.post('/api/feedback', (req, res) => {
     res.json('Error in posting feedback');
   }
 });
+
+//Get route for homepage
+app.get("/", (req, res)) =
+res.sendFile(path.join(_dirname, "public/index.html"));
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
