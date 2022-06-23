@@ -7,6 +7,7 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+// Establishing a connection to the database
 const db = mysql.createConnection(
   {
     host: 'localhost',
@@ -17,6 +18,7 @@ const db = mysql.createConnection(
   console.log(`Connected to the classlist_db database.`)
 );
 
+// Querying the database for the "students" table
 db.query('SELECT * FROM students', function (err, results) {
   console.log(results);
 });
