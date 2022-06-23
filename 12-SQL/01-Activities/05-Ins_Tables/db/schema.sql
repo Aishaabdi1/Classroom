@@ -5,9 +5,6 @@ CREATE DATABASE inventory_db;
 -- Makes it so all of the following code will affect inventory_db --
 USE inventory_db;
 
-
--- Don't understand from this point onwards --
-
 -- Creates the table "produce" within inventory_db -- 
 CREATE TABLE produce (
   -- Creates a numeric column called "id" which will automatically increment its default value as we create new rows --

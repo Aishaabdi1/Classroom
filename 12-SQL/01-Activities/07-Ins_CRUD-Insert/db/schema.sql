@@ -8,8 +8,6 @@ USE inventory_db;
 
 -- Creates the table "produce" within inventory_db --
 CREATE TABLE produce (
-  -- Creates a numeric column called "id" --
   id INT NOT NULL,
-  -- Makes a string column called "name" which cannot contain null --
   name VARCHAR(30) NOT NULL
 );

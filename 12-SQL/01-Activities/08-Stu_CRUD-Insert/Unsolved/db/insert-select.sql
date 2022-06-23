@@ -5,3 +5,5 @@ VALUES
     ( 003, "Long Walk to Freedom");
 
 SELECT * FROM biographies;
+
+Source insert-select.sql
