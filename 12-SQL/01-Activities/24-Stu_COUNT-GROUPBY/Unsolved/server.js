@@ -7,6 +7,7 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+// Establishes a connection
 const db = mysql.createConnection(
   {
     host: 'localhost',
@@ -17,7 +18,7 @@ const db = mysql.createConnection(
   console.log(`Connected to the books_db database.`)
 );
 
-
+// Query databause using COUNT() and GROUP BY 
 db.query('SELECT COUNT(id) AS total_count FROM favorite_books GROUP BY in_stock', function (err, results) {
   console.log(results);
 });

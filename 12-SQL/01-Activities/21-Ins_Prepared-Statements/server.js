@@ -31,6 +31,8 @@ db.query(`DELETE FROM course_names WHERE id = ?`, 3, (err, result) => {
   console.log(result);
 });
 
+// Prevents SQL injection attack // 
+
 // Query database
 db.query('SELECT * FROM course_names', function (err, results) {
   console.log(results);
